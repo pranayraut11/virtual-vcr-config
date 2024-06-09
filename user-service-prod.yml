@@ -2,7 +2,7 @@ version: 3.0.0
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/userdb
+    url: jdbc:postgresql://postgres:5432/userdb
     username: postgres
     password: postgres
   jpa:
