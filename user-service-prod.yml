@@ -1,5 +1,5 @@
 build:
-  version: 12.0.0
+  version: 120.0.0
 
 spring:
   datasource:

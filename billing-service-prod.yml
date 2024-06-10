@@ -1,5 +1,5 @@
 build:
-  version: 3.0.0
+  version: 130.0.0
 spring:
   datasource:
     url: jdbc:postgresql://postgres:5432/billingdb
