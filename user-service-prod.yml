@@ -6,6 +6,8 @@ spring:
     url: jdbc:postgresql://postgres:5432/userdb
     username: postgres
     password: postgres
+  bus:
+    enabled: true  
 
 eureka:
   client:
