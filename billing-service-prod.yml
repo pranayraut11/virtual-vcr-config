@@ -5,11 +5,13 @@ spring:
     url: jdbc:postgresql://postgres:5432/billingdb
     username: postgres
     password: postgres
-    
+  bus:
+    enabled: true  
 eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
+      
     
 
     
