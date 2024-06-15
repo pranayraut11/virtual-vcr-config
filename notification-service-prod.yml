@@ -4,6 +4,12 @@ spring:
     mongodb:
       uri: mongodb://mongodb:27017/notification
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"      
+
 eureka:
   client:
     serviceUrl:
