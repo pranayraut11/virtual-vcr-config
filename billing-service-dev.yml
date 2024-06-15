@@ -1,11 +1,15 @@
 build:
-  version: 2.0.0
+  version: 130.0.0
 spring:
   datasource:
     url: jdbc:postgresql://postgres:5432/billingdb
     username: postgres
     password: postgres
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
-    show-sql: true
+  bus:
+    enabled: false
+  kafka:
+    bootstrap-servers: kafka:9092  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka/
