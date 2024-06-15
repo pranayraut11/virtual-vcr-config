@@ -3,7 +3,11 @@ spring:
   data:
     mongodb:
       uri: mongodb://mongodb:27017/notification
-
+  bus:
+    enabled: true
+  kafka:
+    bootstrap-servers: kafka:9092 
+    
 eureka:
   client:
     serviceUrl:
