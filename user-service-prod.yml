@@ -7,7 +7,9 @@ spring:
     username: postgres
     password: postgres
   bus:
-    enabled: true  
+    enabled: true
+  kafka:
+    host: kafka  
 
 eureka:
   client:
