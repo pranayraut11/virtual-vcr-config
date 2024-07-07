@@ -8,7 +8,13 @@ spring:
   bus:
     enabled: true
   kafka:
-    bootstrap-servers: kafka:9092  
+    bootstrap-servers: kafka:9092
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s    
 eureka:
   client:
     serviceUrl:
