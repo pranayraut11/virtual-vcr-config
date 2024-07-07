@@ -1,0 +1,22 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: message-service
+  cloud:
+    function:
+      definition: email;sms
+    stream:
+      bindings:
+        email-in-0:
+          destination: email
+          group: ${spring.application.name}
+        sms-in-0:
+          destination: sms
+          group: ${spring.application.name}
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s
