@@ -2,7 +2,7 @@ server:
   port: 8085
 spring:
   application:
-    name: message
+    name: message-service
   cloud:
     function:
       definition: email;sms
